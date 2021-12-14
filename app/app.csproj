@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+    <PackageReference Include="PeachPied.WordPress.AspNetCore" Version="$(WpDotNetVersion)" />
+    <PackageReference Include="Peachpie.AspNetCore.Mvc" Version="$(PeachpieVersion)" />
+    <PackageReference Include="PeachPied.WordPress.DotNetBridge" Version="5.8.1-preview11" />
+    <ProjectReference Include="../MyContent/MyContent.msbuildproj">
+      <PrivateAssets>None</PrivateAssets>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>

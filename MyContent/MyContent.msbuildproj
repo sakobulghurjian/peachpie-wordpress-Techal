@@ -1,0 +1,10 @@
+<Project Sdk="Peachpied.WordPress.Build.Plugin">
+  <PropertyGroup>
+    <WpContentTarget>
+    </WpContentTarget>
+    <PhpRelativePath>wp-content/</PhpRelativePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="plugins\Header\Header.php" />
+  </ItemGroup>
+</Project>
